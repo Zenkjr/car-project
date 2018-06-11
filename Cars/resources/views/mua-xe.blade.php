@@ -2,7 +2,6 @@
 @section('title', 'An Thịnh AUTO')
 
 @section('body')
-    <div style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlR82Ywg_kuNrg12BtPmS-L07_qFOW4ARCqmQXJQz7pK9a6zJ2'); min-height: 750px; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;"></div>
     <div class="container">
         <div class="row">
             <div class="col-8">
@@ -121,11 +120,84 @@
                             </div>
                         </a>
                     </div>
-
                 </div>
 
+                <nav class="float-right mt-3">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="col-4"></div>
+            <div class="col-4">
+                <h3>Tìm kiếm nhanh</h3>
+                <h5 class="border-bottom">Hãng xe</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="brand">
+                    <label class="form-check-label" for="brand">
+                        Huyndai
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="brand">
+                    <label class="form-check-label" for="brand">
+                        Avenger
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="brand">
+                    <label class="form-check-label" for="brand">
+                        Lamboghini
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="brand">
+                    <label class="form-check-label" for="brand">
+                        Hpc
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="brand">
+                    <label class="form-check-label" for="brand">
+                        Lojo
+                    </label>
+                </div>
+
+                <h5 class="border-bottom">Giá xe</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="price">
+                    <label class="form-check-label" for="price">
+                        Từ 200 triệu đến 350 triệu
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="price">
+                    <label class="form-check-label" for="price">
+                        Từ 350 triệu đến 500 triệu
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="price">
+                    <label class="form-check-label" for="price">
+                        Từ 500 triệu đến 650 triệu
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="price">
+                    <label class="form-check-label" for="price">
+                        Từ 650 triệu đến 800 triệu
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="price">
+                    <label class="form-check-label" for="price">
+                        Từ 800 triệu đến 1000 triệu
+                    </label>
+                </div>
+            </div>
         </div>
     </div>
 @endsection

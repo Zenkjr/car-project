@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::resource('cars', 'CarController');
+Route::get('/mua-xe', 'CarController@muaxe');

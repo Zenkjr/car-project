@@ -82,4 +82,9 @@ class CarController extends Controller
     {
         //
     }
+
+    // Mua xe.
+    public function muaxe() {
+        return view('mua-xe');
+    }
 }
