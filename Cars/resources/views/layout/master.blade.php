@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/home.css')}}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <script src="{{asset('js/app.js')}}"></script>
     <title>@yield('title')</title>
@@ -16,7 +17,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="col-xl-3 col-2">
                 <a class="navbar-brand" href="/cars">
-                    <i class="fas fa-car fa-5x"></i>
+                    <img src="https://www.capitalcarcare.co.uk/images/ccc_logo.PNG" width="150px">
                 </a>
             </div>
 
