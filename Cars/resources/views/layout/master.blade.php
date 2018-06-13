@@ -40,7 +40,7 @@
                         <a class="nav-link" href="#">Giới thiệu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Liên hệ</a>
+                        <a class="nav-link" href="/lienhe">Liên hệ</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -60,11 +60,11 @@
         <div class="container text-center">
             <h2 class="text-white"><a href="/cars" class="badge badge-dark">An Thịnh AUTO</a></h2>
             <ul class="list-inline">
-                <a href="/mua-xe" class="badge badge-dark">Mua Xe</a>
+                <a class="badge badge-dark" href="/mua-xe">Mua Xe</a>
                 <a class="badge badge-dark" href="#">Bán Xe</a>
                 <a class="badge badge-dark" href="#">Tin Tức</a>
                 <a class="badge badge-dark" href="#">Giới Thiệu</a>
-                <a class="badge badge-dark" href="#">Liên Hệ</a>
+                <a class="badge badge-dark" href="/lienhe">Liên Hệ</a>
                 <a href="#" class="badge badge-dark">Thị Trường Xe</a>
             </ul>
             <p class="text-muted mb-0">Địa chỉ: 39 Lê Văn Lương - 99 Nguyễn Chánh</p>

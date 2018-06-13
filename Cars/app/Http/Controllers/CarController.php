@@ -87,4 +87,9 @@ class CarController extends Controller
     public function muaxe() {
         return view('mua-xe');
     }
+
+    // Liên hệ.
+    public function lienhe() {
+        return view('lienhe');
+    }
 }
