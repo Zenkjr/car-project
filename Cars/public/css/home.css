@@ -43,3 +43,31 @@
         margin: 25px 0;
     }
 }
+
+.detail-line {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px #ddd solid;
+    float: left;
+}
+
+.detail-line>.detail-line-lable {
+    float: left;
+    color: #a7a7a7;
+    width: 35%;
+}
+
+.detail-line>.detail-line-value {
+    float: left;
+    width: 65%;
+}
+
+img.img-big {
+    width: 673px;
+    height: 372px;
+}
+
+img.img-small {
+    width: 123px;
+    height: 81px;
+}
