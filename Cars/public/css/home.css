@@ -53,6 +53,7 @@ body {
         margin: 25px 0;
     }
 }
+<<<<<<< HEAD
 /* =-=-=-=-=-=-= Card  =-=-=-=-=-=-= */
 .category-grid-box-1 {
     background: #fff none repeat scroll 0 0;
@@ -137,26 +138,49 @@ body {
     white-space: nowrap;
 }
 /* =-=-=-=-=-=-= Detail  =-=-=-=-=-=-= */
+=======
+
+>>>>>>> 76a8041979e4108c3ee84cb12cb498bc7bf007a5
 .detail-line {
     display: inline-block;
     width: 100%;
     border-bottom: 1px #ddd solid;
     float: left;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 76a8041979e4108c3ee84cb12cb498bc7bf007a5
 .detail-line>.detail-line-lable {
     float: left;
     color: #a7a7a7;
     width: 35%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 76a8041979e4108c3ee84cb12cb498bc7bf007a5
 .detail-line>.detail-line-value {
     float: left;
     width: 65%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 76a8041979e4108c3ee84cb12cb498bc7bf007a5
 img.img-big {
     width: 673px;
     height: 372px;
 }
+<<<<<<< HEAD
 img.img-small {
     width: 123px;
     height: 81px;
 }
+=======
+
+img.img-small {
+    width: 123px;
+    height: 81px;
+}
+>>>>>>> 76a8041979e4108c3ee84cb12cb498bc7bf007a5

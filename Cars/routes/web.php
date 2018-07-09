@@ -16,4 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::resource('cars', 'CarController');
 Route::get('/mua-xe', 'CarController@muaxe');
 Route::get('/lienhe', 'CarController@lienhe');
+<<<<<<< HEAD
 Route::get('/detail', 'CarController@detail');
+=======
+>>>>>>> 76a8041979e4108c3ee84cb12cb498bc7bf007a5
