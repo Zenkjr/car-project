@@ -80,11 +80,8 @@
                 $("#map").html('<iframe class="pt-3 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.58372841617!2d105.80747501446614!3d21.009317186008904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac9e43748717%3A0x88517efdb51c1e3a!2zMzkgxJDGsOG7nW5nIEzDqiBWxINuIEzGsMahbmcsIFRydW5nIEhvw6AsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lpLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1528797715142" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>');
             });
             $("#map2").click(function(){
-<<<<<<< HEAD
                 $("#map").html('<iframe class="pt-3 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.5741962381653!2d105.79184171482733!3d21.00969899380486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aca62bafbdff%3A0x64345e5de0ad9de8!2zOTkgTmd1eeG7hW4gQ2jDoW5oLCBUcnVuZyBIb8OgLCBD4bqndSBHaeG6pXksIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1528897008761" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>');
-=======
                 $("#map").html('<iframe class="pt-3 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.5743212634084!2d105.79184171446607!3d21.009693986008752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aca62bafbdff%3A0x64345e5de0ad9de8!2zOTkgTmd1eeG7hW4gQ2jDoW5oLCBUcnVuZyBIb8OgLCBD4bqndSBHaeG6pXksIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1529050732372" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>');
->>>>>>> 76a8041979e4108c3ee84cb12cb498bc7bf007a5
             });
         });
     </script>
