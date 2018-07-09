@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 
 class CarController extends Controller
 {
@@ -14,6 +15,12 @@ class CarController extends Controller
      */
     public function index()
     {
+        $brand = DB::table('cars')
+            ->where('brand_id', 1)
+            ->join('brands', 'cars.brand_id', '=', 'brands.id')
+            ->select('cars.*', 'brands.name as brand_name')
+            ->get();
+//        return $brand;
         return view('home');
     }
 
@@ -91,5 +98,9 @@ class CarController extends Controller
     // Liên hệ.
     public function lienhe() {
         return view('lienhe');
+    }
+
+    public function detail() {
+        return view('detail');
     }
 }

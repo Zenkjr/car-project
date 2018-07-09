@@ -4,40 +4,27 @@
 @section('body')
     <div class="container">
         <div class="row">
-            <div class="col-8">
+            <div class="col-9">
                 <div class="row">
 
                     <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-3">
                         <a href="#">
-                            <div class="card">
-                                <img class="card-img-top" src="https://www.caranddriver.com/images/17q4/692996/2019-mclaren-senna-hypercar-official-photos-and-info-news-car-and-driver-photo-698055-s-original.jpg">
-                                <div class="card-body">
-                                    <p class="text-danger" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Huyndai Avente 1.6MT 2011</p>
-                                    <span class="border text-secondary">2015</span>
-                                    <span class="font-weight-light ml-1 text-secondary" style="font-size: 12px">31.000km</span>
-                                    <span class="text-danger float-right"><strong>359 triệu</strong></span>
+                            <div class="category-grid-box-1">
+                                <div class="image">
+                                    <img src="http://templates.scriptsbundle.com/carspot/demos/images/posting/10.jpg" class="img-fluid">
+                                    <div class="ribbon popular"></div>
+                                    <div class="price-tag">
+                                        <div class="price"><span>205 triệu</span></div>
+                                    </div>
                                 </div>
-                                <div class="d-flex flex-row p-1">
-                                    <div class="flex-fill text-center border-top border-right" style="font-size: 12px">Số sàn tự động</div>
-                                    <div class="flex-fill text-success text-center border-top" style="font-size: 12px">Trả trước 195 triệu</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-3">
-                        <a href="#">
-                            <div class="card">
-                                <img class="card-img-top" src="https://www.caranddriver.com/images/17q4/692996/2019-mclaren-senna-hypercar-official-photos-and-info-news-car-and-driver-photo-698055-s-original.jpg">
-                                <div class="card-body">
-                                    <p class="text-danger" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Huyndai Avente 1.6MT 2011</p>
-                                    <span class="border text-secondary">2015</span>
-                                    <span class="font-weight-light ml-1 text-secondary" style="font-size: 12px">31.000km</span>
-                                    <span class="text-danger float-right"><strong>359 triệu</strong></span>
-                                </div>
-                                <div class="d-flex flex-row p-1">
-                                    <div class="flex-fill text-center border-top border-right" style="font-size: 12px">Số sàn tự động</div>
-                                    <div class="flex-fill text-success text-center border-top" style="font-size: 12px">Trả trước 195 triệu</div>
+                                <div class="short-description-1 clearfix">
+                                    <h3>Honda Civic 2017</h3>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-gas-pump"></i>Dầu</li>
+                                        <li><i class="fas fa-tachometer-alt"></i>35,000 km</li>
+                                        <li><i class="fas fa-cogs"></i>150 HP</li>
+                                        <li><i class="fas fa-car"></i>SUV</li>
+                                    </ul>
                                 </div>
                             </div>
                         </a>
@@ -45,35 +32,22 @@
 
                     <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-3">
                         <a href="#">
-                            <div class="card">
-                                <img class="card-img-top" src="https://www.caranddriver.com/images/17q4/692996/2019-mclaren-senna-hypercar-official-photos-and-info-news-car-and-driver-photo-698055-s-original.jpg">
-                                <div class="card-body">
-                                    <p class="text-danger" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Huyndai Avente 1.6MT 2011</p>
-                                    <span class="border text-secondary">2015</span>
-                                    <span class="font-weight-light ml-1 text-secondary" style="font-size: 12px">31.000km</span>
-                                    <span class="text-danger float-right"><strong>359 triệu</strong></span>
+                            <div class="category-grid-box-1">
+                                <div class="image">
+                                    <img src="http://templates.scriptsbundle.com/carspot/demos/images/posting/10.jpg" class="img-fluid">
+                                    <div class="ribbon popular"></div>
+                                    <div class="price-tag">
+                                        <div class="price"><span>205 triệu</span></div>
+                                    </div>
                                 </div>
-                                <div class="d-flex flex-row p-1">
-                                    <div class="flex-fill text-center border-top border-right" style="font-size: 12px">Số sàn tự động</div>
-                                    <div class="flex-fill text-success text-center border-top" style="font-size: 12px">Trả trước 195 triệu</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-3">
-                        <a href="#">
-                            <div class="card">
-                                <img class="card-img-top" src="https://www.caranddriver.com/images/17q4/692996/2019-mclaren-senna-hypercar-official-photos-and-info-news-car-and-driver-photo-698055-s-original.jpg">
-                                <div class="card-body">
-                                    <p class="text-danger" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Huyndai Avente 1.6MT 2011</p>
-                                    <span class="border text-secondary">2015</span>
-                                    <span class="font-weight-light ml-1 text-secondary" style="font-size: 12px">31.000km</span>
-                                    <span class="text-danger float-right"><strong>359 triệu</strong></span>
-                                </div>
-                                <div class="d-flex flex-row p-1">
-                                    <div class="flex-fill text-center border-top border-right" style="font-size: 12px">Số sàn tự động</div>
-                                    <div class="flex-fill text-success text-center border-top" style="font-size: 12px">Trả trước 195 triệu</div>
+                                <div class="short-description-1 clearfix">
+                                    <h3>Honda Civic 2017</h3>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-gas-pump"></i>Dầu</li>
+                                        <li><i class="fas fa-tachometer-alt"></i>35,000 km</li>
+                                        <li><i class="fas fa-cogs"></i>150 HP</li>
+                                        <li><i class="fas fa-car"></i>SUV</li>
+                                    </ul>
                                 </div>
                             </div>
                         </a>
@@ -81,17 +55,22 @@
 
                     <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-3">
                         <a href="#">
-                            <div class="card">
-                                <img class="card-img-top" src="https://www.caranddriver.com/images/17q4/692996/2019-mclaren-senna-hypercar-official-photos-and-info-news-car-and-driver-photo-698055-s-original.jpg">
-                                <div class="card-body">
-                                    <p class="text-danger" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Huyndai Avente 1.6MT 2011</p>
-                                    <span class="border text-secondary">2015</span>
-                                    <span class="font-weight-light ml-1 text-secondary" style="font-size: 12px">31.000km</span>
-                                    <span class="text-danger float-right"><strong>359 triệu</strong></span>
+                            <div class="category-grid-box-1">
+                                <div class="image">
+                                    <img src="http://templates.scriptsbundle.com/carspot/demos/images/posting/10.jpg" class="img-fluid">
+                                    <div class="ribbon popular"></div>
+                                    <div class="price-tag">
+                                        <div class="price"><span>205 triệu</span></div>
+                                    </div>
                                 </div>
-                                <div class="d-flex flex-row p-1">
-                                    <div class="flex-fill text-center border-top border-right" style="font-size: 12px">Số sàn tự động</div>
-                                    <div class="flex-fill text-success text-center border-top" style="font-size: 12px">Trả trước 195 triệu</div>
+                                <div class="short-description-1 clearfix">
+                                    <h3>Honda Civic 2017</h3>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-gas-pump"></i>Dầu</li>
+                                        <li><i class="fas fa-tachometer-alt"></i>35,000 km</li>
+                                        <li><i class="fas fa-cogs"></i>150 HP</li>
+                                        <li><i class="fas fa-car"></i>SUV</li>
+                                    </ul>
                                 </div>
                             </div>
                         </a>
@@ -99,17 +78,68 @@
 
                     <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-3">
                         <a href="#">
-                            <div class="card">
-                                <img class="card-img-top" src="https://www.caranddriver.com/images/17q4/692996/2019-mclaren-senna-hypercar-official-photos-and-info-news-car-and-driver-photo-698055-s-original.jpg">
-                                <div class="card-body">
-                                    <p class="text-danger" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Huyndai Avente 1.6MT 2011</p>
-                                    <span class="border text-secondary">2015</span>
-                                    <span class="font-weight-light ml-1 text-secondary" style="font-size: 12px">31.000km</span>
-                                    <span class="text-danger float-right"><strong>359 triệu</strong></span>
+                            <div class="category-grid-box-1">
+                                <div class="image">
+                                    <img src="http://templates.scriptsbundle.com/carspot/demos/images/posting/10.jpg" class="img-fluid">
+                                    <div class="ribbon popular"></div>
+                                    <div class="price-tag">
+                                        <div class="price"><span>205 triệu</span></div>
+                                    </div>
                                 </div>
-                                <div class="d-flex flex-row p-1">
-                                    <div class="flex-fill text-center border-top border-right" style="font-size: 12px">Số sàn tự động</div>
-                                    <div class="flex-fill text-success text-center border-top" style="font-size: 12px">Trả trước 195 triệu</div>
+                                <div class="short-description-1 clearfix">
+                                    <h3>Honda Civic 2017</h3>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-gas-pump"></i>Dầu</li>
+                                        <li><i class="fas fa-tachometer-alt"></i>35,000 km</li>
+                                        <li><i class="fas fa-cogs"></i>150 HP</li>
+                                        <li><i class="fas fa-car"></i>SUV</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-3">
+                        <a href="#">
+                            <div class="category-grid-box-1">
+                                <div class="image">
+                                    <img src="http://templates.scriptsbundle.com/carspot/demos/images/posting/10.jpg" class="img-fluid">
+                                    <div class="ribbon popular"></div>
+                                    <div class="price-tag">
+                                        <div class="price"><span>205 triệu</span></div>
+                                    </div>
+                                </div>
+                                <div class="short-description-1 clearfix">
+                                    <h3>Honda Civic 2017</h3>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-gas-pump"></i>Dầu</li>
+                                        <li><i class="fas fa-tachometer-alt"></i>35,000 km</li>
+                                        <li><i class="fas fa-cogs"></i>150 HP</li>
+                                        <li><i class="fas fa-car"></i>SUV</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-3">
+                        <a href="#">
+                            <div class="category-grid-box-1">
+                                <div class="image">
+                                    <img src="http://templates.scriptsbundle.com/carspot/demos/images/posting/10.jpg" class="img-fluid">
+                                    <div class="ribbon popular"></div>
+                                    <div class="price-tag">
+                                        <div class="price"><span>205 triệu</span></div>
+                                    </div>
+                                </div>
+                                <div class="short-description-1 clearfix">
+                                    <h3>Honda Civic 2017</h3>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-gas-pump"></i>Dầu</li>
+                                        <li><i class="fas fa-tachometer-alt"></i>35,000 km</li>
+                                        <li><i class="fas fa-cogs"></i>150 HP</li>
+                                        <li><i class="fas fa-car"></i>SUV</li>
+                                    </ul>
                                 </div>
                             </div>
                         </a>
@@ -127,7 +157,9 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-4">
+
+
+            <div class="col-3">
                 <h3>Tìm kiếm nhanh</h3>
                 <h5 class="border-bottom">Hãng xe</h5>
                 <div class="form-check">
