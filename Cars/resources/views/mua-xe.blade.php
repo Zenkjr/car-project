@@ -1,5 +1,5 @@
 @extends('layout.master')
-@section('title', 'An Thịnh AUTO')
+@section('title', 'Mua xe | An Thịnh AUTO')
 
 @section('body')
     <div class="container">
@@ -7,155 +7,37 @@
             <div class="col-9">
                 <div class="row">
 
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-3">
-                        <a href="#">
-                            <div class="category-grid-box-1">
-                                <div class="image">
-                                    <img src="http://templates.scriptsbundle.com/carspot/demos/images/posting/10.jpg" class="img-fluid">
-                                    <div class="ribbon popular"></div>
-                                    <div class="price-tag">
-                                        <div class="price"><span>205 triệu</span></div>
+                    @foreach($cars as $item)
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-3">
+                            <a href="cars/{{$item->id}}">
+                                <div class="category-grid-box-1">
+                                    <div class="image">
+                                        <img src="{{$item->img}}">
+                                        <div class="ribbon popular"></div>
+                                        <div class="price-tag">
+                                            <div class="price"><span>{{$item->price}} triệu</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="short-description-1 clearfix">
+                                        <h3>{{$item->name}}</h3>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-gas-pump"></i>{{$item->engine}}</li>
+                                            <li><i class="fas fa-wheelchair"></i>{{$item->seat}}</li>
+                                            <li><i class="fas fa-cogs"></i>{{$item->horse_power}} HP</li>
+                                            <li><i class="fas fa-car"></i>{{$item->clazz}}</li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="short-description-1 clearfix">
-                                    <h3>Honda Civic 2017</h3>
-                                    <ul class="list-unstyled">
-                                        <li><i class="fas fa-gas-pump"></i>Dầu</li>
-                                        <li><i class="fas fa-tachometer-alt"></i>35,000 km</li>
-                                        <li><i class="fas fa-cogs"></i>150 HP</li>
-                                        <li><i class="fas fa-car"></i>SUV</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-3">
-                        <a href="#">
-                            <div class="category-grid-box-1">
-                                <div class="image">
-                                    <img src="http://templates.scriptsbundle.com/carspot/demos/images/posting/10.jpg" class="img-fluid">
-                                    <div class="ribbon popular"></div>
-                                    <div class="price-tag">
-                                        <div class="price"><span>205 triệu</span></div>
-                                    </div>
-                                </div>
-                                <div class="short-description-1 clearfix">
-                                    <h3>Honda Civic 2017</h3>
-                                    <ul class="list-unstyled">
-                                        <li><i class="fas fa-gas-pump"></i>Dầu</li>
-                                        <li><i class="fas fa-tachometer-alt"></i>35,000 km</li>
-                                        <li><i class="fas fa-cogs"></i>150 HP</li>
-                                        <li><i class="fas fa-car"></i>SUV</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-3">
-                        <a href="#">
-                            <div class="category-grid-box-1">
-                                <div class="image">
-                                    <img src="http://templates.scriptsbundle.com/carspot/demos/images/posting/10.jpg" class="img-fluid">
-                                    <div class="ribbon popular"></div>
-                                    <div class="price-tag">
-                                        <div class="price"><span>205 triệu</span></div>
-                                    </div>
-                                </div>
-                                <div class="short-description-1 clearfix">
-                                    <h3>Honda Civic 2017</h3>
-                                    <ul class="list-unstyled">
-                                        <li><i class="fas fa-gas-pump"></i>Dầu</li>
-                                        <li><i class="fas fa-tachometer-alt"></i>35,000 km</li>
-                                        <li><i class="fas fa-cogs"></i>150 HP</li>
-                                        <li><i class="fas fa-car"></i>SUV</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-3">
-                        <a href="#">
-                            <div class="category-grid-box-1">
-                                <div class="image">
-                                    <img src="http://templates.scriptsbundle.com/carspot/demos/images/posting/10.jpg" class="img-fluid">
-                                    <div class="ribbon popular"></div>
-                                    <div class="price-tag">
-                                        <div class="price"><span>205 triệu</span></div>
-                                    </div>
-                                </div>
-                                <div class="short-description-1 clearfix">
-                                    <h3>Honda Civic 2017</h3>
-                                    <ul class="list-unstyled">
-                                        <li><i class="fas fa-gas-pump"></i>Dầu</li>
-                                        <li><i class="fas fa-tachometer-alt"></i>35,000 km</li>
-                                        <li><i class="fas fa-cogs"></i>150 HP</li>
-                                        <li><i class="fas fa-car"></i>SUV</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-3">
-                        <a href="#">
-                            <div class="category-grid-box-1">
-                                <div class="image">
-                                    <img src="http://templates.scriptsbundle.com/carspot/demos/images/posting/10.jpg" class="img-fluid">
-                                    <div class="ribbon popular"></div>
-                                    <div class="price-tag">
-                                        <div class="price"><span>205 triệu</span></div>
-                                    </div>
-                                </div>
-                                <div class="short-description-1 clearfix">
-                                    <h3>Honda Civic 2017</h3>
-                                    <ul class="list-unstyled">
-                                        <li><i class="fas fa-gas-pump"></i>Dầu</li>
-                                        <li><i class="fas fa-tachometer-alt"></i>35,000 km</li>
-                                        <li><i class="fas fa-cogs"></i>150 HP</li>
-                                        <li><i class="fas fa-car"></i>SUV</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-3">
-                        <a href="#">
-                            <div class="category-grid-box-1">
-                                <div class="image">
-                                    <img src="http://templates.scriptsbundle.com/carspot/demos/images/posting/10.jpg" class="img-fluid">
-                                    <div class="ribbon popular"></div>
-                                    <div class="price-tag">
-                                        <div class="price"><span>205 triệu</span></div>
-                                    </div>
-                                </div>
-                                <div class="short-description-1 clearfix">
-                                    <h3>Honda Civic 2017</h3>
-                                    <ul class="list-unstyled">
-                                        <li><i class="fas fa-gas-pump"></i>Dầu</li>
-                                        <li><i class="fas fa-tachometer-alt"></i>35,000 km</li>
-                                        <li><i class="fas fa-cogs"></i>150 HP</li>
-                                        <li><i class="fas fa-car"></i>SUV</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
+                    @endforeach
 
                 </div>
 
-                <nav class="float-right mt-3">
-                    <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                    </ul>
-                </nav>
+                <div class="float-right mt-2">
+                    {{ $cars->links() }}
+                </div>
+
             </div>
 
 

@@ -17,3 +17,5 @@ Route::resource('cars', 'CarController');
 Route::get('/mua-xe', 'CarController@muaxe');
 Route::get('/lienhe', 'CarController@lienhe');
 Route::get('/detail', 'CarController@detail');
+
+Route::get('/tin-tuc', 'ArticleController@index');

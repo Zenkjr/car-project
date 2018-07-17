@@ -1,226 +1,220 @@
-@extends('layout.master')
-@section('title', 'An Thịnh AUTO')
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/home.css')}}">
+    <link rel="stylesheet" href="{{asset('css/show/showInfo.css')}}">
+    <script src="{{asset('js/show/showInfo.js')}}"></script>
 
-@section('body')
+    <script src="{{asset('js/app.js')}}"></script>
+
+    <title>{{$car->name}} | An Thịnh AUTO</title>
+</head>
+<body>
+<div class="container-fluid bg-light">
     <div class="container">
-        <!-- Name of car -->
-        <h3 class="mt-3 mb-3">Mazda 3 1.5AT 2017</h3>
-        <div class="row">
-            <div class="col-8">
-
-                <!-- Slide -->
-                <div id="listImg" class="carousel slide" data-ride="carousel">
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100 img-big" src="https://hips.hearstapps.com/hmg-prod/images/2017-honda-civic-si-vs-2018-volkswagen-golf-gti-comparison-test-placement-1524248453.jpg">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100 img-big" src="https://www.caranddriver.com/images/17q4/692996/2019-mclaren-senna-hypercar-official-photos-and-info-news-car-and-driver-photo-698055-s-original.jpg">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100 img-big" src="https://img.gaadicdn.com/images/mycar/large/maruti/alto-k10/marketimg/alto-k10.webp">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#listImg" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#listImg" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-
-                <ul class="row list-inline mt-3">
-                    <li class="col-3 list-inline-item active" data-target="#listImg" data-slide-to="0">
-                        <img class="d-block w-100 img-small" src="https://hips.hearstapps.com/hmg-prod/images/2017-honda-civic-si-vs-2018-volkswagen-golf-gti-comparison-test-placement-1524248453.jpg">
-                    </li>
-                    <li class="col-3 list-inline-item" data-target="#listImg" data-slide-to="1">
-                        <img class="d-block w-100 img-small" src="https://www.caranddriver.com/images/17q4/692996/2019-mclaren-senna-hypercar-official-photos-and-info-news-car-and-driver-photo-698055-s-original.jpg">
-                    </li>
-                    <li class="col-3 list-inline-item" data-target="#listImg" data-slide-to="2">
-                        <img class="d-block w-100 img-small" src="https://img.gaadicdn.com/images/mycar/large/maruti/alto-k10/marketimg/alto-k10.webp">
-                    </li>
-                </ul>
-
-                <!-- Table detail -->
-                <div class="row mt-3" style="font-size: 14px">
-                    <div class="col-lg-6">
-                        <div class="detail-line">
-                            <div class="detail-line-lable">Tình trạng</div>
-                            <div class="detail-line-value">Đã qua SD</div>
-                        </div>
-                        <div class="detail-line">
-                            <div class="detail-line-lable">Nhãn hiệu</div>
-                            <div class="detail-line-value">Cerato 1.6MT</div>
-                        </div>
-                        <div class="detail-line">
-                            <div class="detail-line-lable">Số loại</div>
-                            <div class="detail-line-value"></div>
-                        </div>
-                        <div class="detail-line">
-                            <div class="detail-line-lable">Xuất xứ</div>
-                            <div class="detail-line-value">Lắp ráp trong nước Việt Nam</div>
-                        </div>
-                        <div class="detail-line">
-                            <div class="detail-line-lable">Năm sản xuất</div>
-                            <div class="detail-line-value">2016</div>
-                        </div>
-                        <div class="detail-line">
-                            <div class="detail-line-lable">Màu xe</div>
-                            <div class="detail-line-value">Bạc</div>
-                        </div>
-                        <div class="detail-line">
-                            <div class="detail-line-lable">Màu nội thất</div>
-                            <div class="detail-line-value">Đen</div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="detail-line">
-                            <div class="detail-line-lable">Kiểu dáng</div>
-                            <div class="detail-line-value">Sedans</div>
-                        </div>
-                        <div class="detail-line">
-                            <div class="detail-line-lable">Số chỗ ngồi</div>
-                            <div class="detail-line-value">5</div>
-                        </div>
-                        <div class="detail-line">
-                            <div class="detail-line-lable">Số cửa</div>
-                            <div class="detail-line-value">4</div>
-                        </div>
-                        <div class="detail-line">
-                            <div class="detail-line-lable">Dẫn động</div>
-                            <div class="detail-line-value">Một cầu</div>
-                        </div>
-                        <div class="detail-line">
-                            <div class="detail-line-lable">Nhiên liệu</div>
-                            <div class="detail-line-value">Xăng</div>
-                        </div>
-                        <div class="detail-line">
-                            <div class="detail-line-lable">Hộp số</div>
-                            <div class="detail-line-value">Số sàn</div>
-                        </div>
-                        <div class="detail-line">
-                            <div class="detail-line-lable">Số km đã đi</div>
-                            <div class="detail-line-value">22.000</div>
-                        </div>
-                    </div>
-                </div>
-
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="col-xl-3 col-2">
+                <a class="navbar-brand" href="/cars">
+                    <img src="https://www.capitalcarcare.co.uk/images/ccc_logo.PNG" width="150px">
+                </a>
             </div>
 
-            <div class="col-4">
-                <div class="border p-3">
-                    <div class="text-center">
-                        <h3>Giá: <strong class="text-danger">900</strong> triệu</h3>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/mua-xe">Mua xe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bán xe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/lienhe">Liên hệ</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</div>
+{{--silder jquery--}}
+<div class="container">
+    <h3 class="mt-3 mb-3">{{$car->name}}</h3>
+    <div class="row">
+        <div class="col-sm-8 slider-show">
+
+            <div id="jssor_1">
+                <!-- Loading Screen -->
+                <div data-u="loading" class="jssorl-009-spin"
+                     style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                </div>
+                <div data-u="slides"
+                     style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+                    @foreach($image as $item)
+                        <div data-p="170">
+                            <img data-u="image" src="{{$item->url}}"/>
+                            <img data-u="thumb" src="{{$item->url}}"/>
+                        </div>
+                    @endforeach
+                </div>
+                <!-- Thumbnail Navigator -->
+                <div data-u="thumbnavigator" class="jssort101"
+                     style="position:absolute;left:0px;bottom:0px;width:980px;height:100px;background-color:#000;"
+                     data-autocenter="1" data-scale-bottom="0.75">
+                    <div data-u="slides">
+                        <div data-u="prototype" class="p" style="width:190px;height:90px;">
+                            <div data-u="thumbnailtemplate" class="t"></div>
+                            <svg viewbox="0 0 16000 16000" class="cv">
+                                <circle class="a" cx="8000" cy="8000" r="3238.1"></circle>
+                                <line class="a" x1="6190.5" y1="8000" x2="9809.5" y2="8000"></line>
+                                <line class="a" x1="8000" y1="9809.5" x2="8000" y2="6190.5"></line>
+                            </svg>
+                        </div>
                     </div>
-                    <p>Địa chỉ xem xe:</p>
-                    <h5>AN THỊNH AUTO</h5>
-                    <p>39 Đường Lê Văn Lương, Trung Hoà, Cầu Giấy, Hà Nội</p>
-                    <div class="text-center">
-                        <button type="button" class="btn btn-success">Quan tâm</button>
-                    </div>
+                </div>
+                <!-- Arrow Navigator -->
+                <div data-u="arrowleft" class="jssora106" style="width:55px;height:55px;top:162px;left:30px;"
+                     data-scale="0.75">
+                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                        <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+                        <polyline class="a" points="7930.4,5495.7 5426.1,8000 7930.4,10504.3 "></polyline>
+                        <line class="a" x1="10573.9" y1="8000" x2="5426.1" y2="8000"></line>
+                    </svg>
+                </div>
+                <div data-u="arrowright" class="jssora106" style="width:55px;height:55px;top:162px;right:30px;"
+                     data-scale="0.75">
+                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                        <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+                        <polyline class="a" points="8069.6,5495.7 10573.9,8000 8069.6,10504.3 "></polyline>
+                        <line class="a" x1="5426.1" y1="8000" x2="10573.9" y2="8000"></line>
+                    </svg>
                 </div>
             </div>
         </div>
-
-        <!-- Các mẫu oto tương tự -->
-        <h4 class="text-center mt-3">Các mẫu ôtô tương tự</h4>
-        <div class="row">
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-3">
-                <a href="#">
-                    <div class="category-grid-box-1">
-                        <div class="image">
-                            <img src="http://templates.scriptsbundle.com/carspot/demos/images/posting/10.jpg" class="img-fluid">
-                            <div class="ribbon popular"></div>
-                            <div class="price-tag">
-                                <div class="price"><span>205 triệu</span></div>
-                            </div>
-                        </div>
-                        <div class="short-description-1 clearfix">
-                            <h3>Honda Civic 2017</h3>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-gas-pump"></i>Dầu</li>
-                                <li><i class="fas fa-tachometer-alt"></i>35,000 km</li>
-                                <li><i class="fas fa-cogs"></i>150 HP</li>
-                                <li><i class="fas fa-car"></i>SUV</li>
-                            </ul>
-                        </div>
-                    </div>
-                </a>
+        <div class="col-sm-4" id="info-basic">
+            <div class="border p-3">
+                <div class="text-center">
+                    <h3>Giá: <strong class="text-danger">{{$car->price}}</strong> triệu</h3>
+                </div>
+                <p>Địa chỉ xem xe:</p>
+                <h5>AN THỊNH AUTO</h5>
+                <p>39 Đường Lê Văn Lương, Trung Hoà, Cầu Giấy, Hà Nội</p>
+                <p>99 Đường Nguyễn Chánh, Trung Hoà, Cầu Giấy, Hà Nội</p>
+                <div class="text-center">
+                    <button type="button" class="btn btn-success">Quan tâm</button>
+                </div>
             </div>
+        </div>
+    </div>
+    <!-- end slider jquery -->
 
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-3">
-                <a href="#">
-                    <div class="category-grid-box-1">
-                        <div class="image">
-                            <img src="http://templates.scriptsbundle.com/carspot/demos/images/posting/10.jpg" class="img-fluid">
-                            <div class="ribbon popular"></div>
-                            <div class="price-tag">
-                                <div class="price"><span>205 triệu</span></div>
-                            </div>
-                        </div>
-                        <div class="short-description-1 clearfix">
-                            <h3>Honda Civic 2017</h3>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-gas-pump"></i>Dầu</li>
-                                <li><i class="fas fa-tachometer-alt"></i>35,000 km</li>
-                                <li><i class="fas fa-cogs"></i>150 HP</li>
-                                <li><i class="fas fa-car"></i>SUV</li>
-                            </ul>
-                        </div>
+    <!-- Name of car -->
+    <div class="row">
+        <div class="col-sm-8 ">
+        <!-- Table detail -->
+            <div class="row mt-3" style="font-size: 14px">
+                <div class="col-lg-6">
+                    <div class="detail-line">
+                        <div class="detail-line-lable">Nhãn hiệu</div>
+                        <div class="detail-line-value">{{$car->brand}}</div>
                     </div>
-                </a>
-            </div>
+                    <div class="detail-line">
+                        <div class="detail-line-lable">Tình trạng</div>
+                        @if($car->status == 0)
+                            <div class="detail-line-value">Hết hàng</div>
+                        @elseif($car->status == 1)
+                            <div class="detail-line-value">Đang bán</div>
+                        @endif
+                    </div>
+                    <div class="detail-line">
+                        <div class="detail-line-lable">Mã lực</div>
+                        <div class="detail-line-value">{{$car->horse_power}}</div>
+                    </div>
+                    <div class="detail-line">
+                        <div class="detail-line-lable">Xuất xứ</div>
+                        <div class="detail-line-value">Lắp ráp tại {{$car->country}}</div>
+                    </div>
+                    <div class="detail-line">
+                        <div class="detail-line-lable">Năm sản xuất</div>
+                        <div class="detail-line-value">{{$car->year}}</div>
+                    </div>
+                    <div class="detail-line">
+                        <div class="detail-line-lable">Màu xe</div>
+                        <div class="detail-line-value">{{$car->color}}</div>
+                    </div>
+                </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-3">
-                <a href="#">
-                    <div class="category-grid-box-1">
-                        <div class="image">
-                            <img src="http://templates.scriptsbundle.com/carspot/demos/images/posting/10.jpg" class="img-fluid">
-                            <div class="ribbon popular"></div>
-                            <div class="price-tag">
-                                <div class="price"><span>205 triệu</span></div>
-                            </div>
-                        </div>
-                        <div class="short-description-1 clearfix">
-                            <h3>Honda Civic 2017</h3>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-gas-pump"></i>Dầu</li>
-                                <li><i class="fas fa-tachometer-alt"></i>35,000 km</li>
-                                <li><i class="fas fa-cogs"></i>150 HP</li>
-                                <li><i class="fas fa-car"></i>SUV</li>
-                            </ul>
-                        </div>
+                <div class="col-lg-6">
+                    <div class="detail-line">
+                        <div class="detail-line-lable">Kiểu dáng</div>
+                        <div class="detail-line-value">{{$car->clazz}}</div>
                     </div>
-                </a>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-3">
-                <a href="#">
-                    <div class="category-grid-box-1">
-                        <div class="image">
-                            <img src="http://templates.scriptsbundle.com/carspot/demos/images/posting/10.jpg" class="img-fluid">
-                            <div class="ribbon popular"></div>
-                            <div class="price-tag">
-                                <div class="price"><span>205 triệu</span></div>
-                            </div>
-                        </div>
-                        <div class="short-description-1 clearfix">
-                            <h3>Honda Civic 2017</h3>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-gas-pump"></i>Dầu</li>
-                                <li><i class="fas fa-tachometer-alt"></i>35,000 km</li>
-                                <li><i class="fas fa-cogs"></i>150 HP</li>
-                                <li><i class="fas fa-car"></i>SUV</li>
-                            </ul>
-                        </div>
+                    <div class="detail-line">
+                        <div class="detail-line-lable">Cỡ lốp</div>
+                        <div class="detail-line-value">{{$car->tire_size}}</div>
                     </div>
-                </a>
+                    <div class="detail-line">
+                        <div class="detail-line-lable">Nhiên liệu</div>
+                        <div class="detail-line-value">{{$car->engine}}</div>
+                    </div>
+                    <div class="detail-line">
+                        <div class="detail-line-lable">Số chỗ ngồi</div>
+                        <div class="detail-line-value">{{$car->seat}}</div>
+                    </div>
+                    <div class="detail-line">
+                        <div class="detail-line-lable">Đăng ký lần đầu</div>
+                        <div class="detail-line-value">{{$car->first_plate}}</div>
+                    </div>
+                    <div class="detail-line">
+                        <div class="detail-line-lable">Ngày hết hạn</div>
+                        <div class="detail-line-value">{{$car->regis_expiry}}</div>
+                    </div>
+                </div>
             </div>
 
         </div>
     </div>
-@endsection
+</div>
+{{--@endif--}}
+<footer>
+    <div class="container-fluid bg-dark mt-3">
+        <div class="container text-center">
+            <h2 class="text-white"><a href="/cars" class="badge badge-dark">An Thịnh AUTO</a></h2>
+            <ul class="list-inline">
+                <a class="badge badge-dark" href="/mua-xe">Mua Xe</a>
+                <a class="badge badge-dark" href="#">Bán Xe</a>
+                <a class="badge badge-dark" href="#">Tin Tức</a>
+                <a class="badge badge-dark" href="#">Giới Thiệu</a>
+                <a class="badge badge-dark" href="/lienhe">Liên Hệ</a>
+                <a href="#" class="badge badge-dark">Thị Trường Xe</a>
+            </ul>
+            <p class="text-muted mb-0">Địa chỉ: 39 Lê Văn Lương - 99 Nguyễn Chánh</p>
+            <p class="text-muted mb-0">Email: <a href="mailto:anthinh@gmail.com">anthinh@gmail.com</a></p>
+            <p class="text-muted mb-0">Phone: <a href="tel:0961.694.594">0961.694.594</a></p>
+            <p class="text-muted">An Thịnh AUTO © All rights reserved.</p>
+
+        </div>
+    </div>
+</footer>
+<script type="text/javascript">jssor_1_slider_init();</script>
+</body>
+</html>

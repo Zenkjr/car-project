@@ -2,6 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Car;
+use App\Brand;
+use App\Clazz;
+use App\Color;
+use App\Country;
+use App\Image;
+use App\Stock;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
@@ -15,13 +22,45 @@ class CarController extends Controller
      */
     public function index()
     {
-        $brand = DB::table('cars')
-            ->where('brand_id', 1)
-            ->join('brands', 'cars.brand_id', '=', 'brands.id')
-            ->select('cars.*', 'brands.name as brand_name')
-            ->get();
-//        return $brand;
-        return view('home');
+        $brandAudi = Car::where('brand_id', 1)->get();
+        $brandMazda = Car::where('brand_id', 2)->get();
+        $brandBmw = Car::where('brand_id', 3)->get();
+        $brandHyundai = Car::where('brand_id', 4)->get();
+        foreach($brandAudi as $audi) {
+            $clazz = Clazz::where('id', $audi->clazz_id)->first();
+            $stock = Stock::where('car_id', $audi->id)->first();
+            $img = Image::where('car_id', $audi->id)->first();
+            $audi->price = $stock['price'];
+            $audi->clazz = $clazz['clazzes_name'];
+            $audi->img = $img['url'];
+        }
+        foreach($brandMazda as $mazda) {
+        $clazz = Clazz::where('id', $mazda->clazz_id)->first();
+        $stock = Stock::where('car_id', $mazda->id)->first();
+        $img = Image::where('car_id', $mazda->id)->first();
+        $mazda->price = $stock['price'];
+        $mazda->clazz = $clazz['clazzes_name'];
+        $mazda->img = $img['url'];
+
+    }
+        foreach($brandBmw as $bmw) {
+            $clazz = Clazz::where('id', $bmw->clazz_id)->first();
+            $stock = Stock::where('car_id', $bmw->id)->first();
+            $img = Image::where('car_id', $bmw->id)->first();
+            $bmw->price = $stock['price'];
+            $bmw->clazz = $clazz['clazzes_name'];
+            $bmw->img = $img['url'];
+        }
+        foreach($brandHyundai as $hyundai) {
+            $clazz = Clazz::where('id', $hyundai->clazz_id)->first();
+            $stock = Stock::where('car_id', $hyundai->id)->first();
+            $img = Image::where('car_id', $hyundai->id)->first();
+            $hyundai->price = $stock['price'];
+            $hyundai->clazz = $clazz['clazzes_name'];
+            $hyundai->img = $img['url'];
+        }
+//        return $brandAudi;
+        return view('home')->with(['brandAudi' => $brandAudi, 'brandMazda' => $brandMazda, 'brandBmw' => $brandBmw, 'brandHyundai' => $brandHyundai]);
     }
 
     /**
@@ -53,7 +92,23 @@ class CarController extends Controller
      */
     public function show($id)
     {
-        //
+        $car = Car::find($id);
+        $brand = Brand::where('id', $car->brand_id)->first();
+        $clazz = Clazz::where('id', $car->clazz_id)->first();
+        $stock = Stock::where('car_id', $car->id)->first();
+        $country = Country::where('id', $stock->country_id)->first();
+        $color = Color::where('id', $stock->color_id)->first();
+        $car->price = $stock['price'];
+        $car->brand = $brand['name'];
+        $car->clazz = $clazz['clazzes_name'];
+        $car->status = $stock['status'];
+        $car->country = $country['name'];
+        $car->color = $color['name'];
+        $car->first_plate = $stock['first_plate'];
+        $car->regis_expiry = $stock['regis_expiry'];
+        $img = Image::select('*')->where('car_id', $id)->get();
+        return view('detail')->with(['car' => $car,
+            'image' => $img]);
     }
 
     /**
@@ -91,8 +146,20 @@ class CarController extends Controller
     }
 
     // Mua xe.
-    public function muaxe() {
-        return view('mua-xe');
+    public function muaxe()
+    {
+        $cars = Car::orderBy('id', 'DESC')->paginate(6);
+        foreach($cars as $car) {
+            $clazz = Clazz::where('id', $car->clazz_id)->first();
+            $stock = Stock::where('car_id', $car->id)->first();
+            $img = Image::where('car_id', $car->id)->first();
+            $car->price = $stock['price'];
+            $car->clazz = $clazz['clazzes_name'];
+            $car->img = $img['url'];
+        }
+//        return $cars;
+
+        return view('mua-xe')->with("cars", $cars);
     }
 
     // Liên hệ.

@@ -36,7 +36,7 @@
                         <a class="nav-link" href="#">Bán xe</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tin tức</a>
+                        <a class="nav-link" href="/tin-tuc">Tin tức</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Giới thiệu</a>
@@ -64,7 +64,7 @@
             <ul class="list-inline">
                 <a class="badge badge-dark" href="/mua-xe">Mua Xe</a>
                 <a class="badge badge-dark" href="#">Bán Xe</a>
-                <a class="badge badge-dark" href="#">Tin Tức</a>
+                <a class="badge badge-dark" href="/tin-tuc">Tin Tức</a>
                 <a class="badge badge-dark" href="#">Giới Thiệu</a>
                 <a class="badge badge-dark" href="/lienhe">Liên Hệ</a>
                 <a href="#" class="badge badge-dark">Thị Trường Xe</a>
