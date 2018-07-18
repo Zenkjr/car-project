@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('cars', 'CarController');
-Route::get('/mua-xe', 'CarController@muaxe');
-Route::get('/lienhe', 'CarController@lienhe');
-Route::get('/detail', 'CarController@detail');
+Route::resource('cars', 'FontEndController');
+Route::get('/mua-xe', 'FontEndController@muaxe');
+Route::get('/lienhe', 'FontEndController@lienhe');
+Route::get('/detail', 'FontEndController@detail');
 
-Route::get('/tin-tuc', 'ArticleController@index');
+Route::get('/tin-tuc', 'FontEndController@article');
