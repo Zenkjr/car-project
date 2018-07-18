@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('fontEnd.layout.master')
 @section('title', 'An Thịnh AUTO')
 
 @section('body')

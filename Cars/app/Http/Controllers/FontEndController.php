@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Article;
 use App\Car;
 use App\Brand;
 use App\Clazz;
@@ -13,7 +14,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 
-class CarController extends Controller
+class FontEndController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -60,7 +61,7 @@ class CarController extends Controller
             $hyundai->img = $img['url'];
         }
 //        return $brandAudi;
-        return view('home')->with(['brandAudi' => $brandAudi, 'brandMazda' => $brandMazda, 'brandBmw' => $brandBmw, 'brandHyundai' => $brandHyundai]);
+        return view('fontEnd.home')->with(['brandAudi' => $brandAudi, 'brandMazda' => $brandMazda, 'brandBmw' => $brandBmw, 'brandHyundai' => $brandHyundai]);
     }
 
     /**
@@ -107,7 +108,7 @@ class CarController extends Controller
         $car->first_plate = $stock['first_plate'];
         $car->regis_expiry = $stock['regis_expiry'];
         $img = Image::select('*')->where('car_id', $id)->get();
-        return view('detail')->with(['car' => $car,
+        return view('fontEnd.detail')->with(['car' => $car,
             'image' => $img]);
     }
 
@@ -159,15 +160,19 @@ class CarController extends Controller
         }
 //        return $cars;
 
-        return view('mua-xe')->with("cars", $cars);
+        return view('fontEnd.mua-xe')->with("cars", $cars);
     }
 
     // Liên hệ.
     public function lienhe() {
-        return view('lienhe');
+        return view('fontEnd.lienhe');
     }
 
     public function detail() {
-        return view('detail');
+        return view('fontEnd.detail');
+    }
+    public function article(){
+        $articles = Article::orderBy('id', 'DESC')->paginate(5);
+        return view('fontEnd.article')->with('articles', $articles);
     }
 }
